@@ -52,6 +52,8 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "adding-multiple-physical-equipment-units": "Adding multiple physical equipment units",
+        "equipment-editing-deletion-and-restoration": "Equipment editing, deletion and restoration",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-dev-ops": "Documentation, logging, testing, dev-ops",
@@ -63,7 +65,9 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
+        "rejection-of-retired-commands": "Rejection of retired commands",
+        "adding-a-batch-of-equipment": "Adding a batch of equipment",
+        "editing-deleting-and-restoring-equipment": "Editing, deleting and restoring equipment",
         "saving-data": "Saving data"
       },
       "headingKeywords": {}
@@ -72,7 +76,8 @@
       "src": "Documentation.md",
       "title": "Documentation guide",
       "headings": {
-        "documentation-guide": "Documentation Guide"
+        "documentation-guide": "Documentation Guide",
+        "local-preview-and-diagram-rendering": "Local preview and diagram rendering"
       },
       "headingKeywords": {}
     },
@@ -87,7 +92,8 @@
         "shared-display-contract-owned-by-nicholas": "Shared display contract owned by Nicholas",
         "shared-parsing-and-sorting-contracts-owned-by-duy": "Shared parsing and sorting contracts owned by Duy",
         "gui-component-contracts-and-ownership": "GUI component contracts and ownership",
-        "ownership-of-shared-files": "Ownership of shared files"
+        "ownership-of-shared-files": "Ownership of shared files",
+        "equipment-maintenance-update": "Equipment maintenance update"
       },
       "headingKeywords": {}
     },
@@ -109,7 +115,9 @@
         "json-contracts": "JSON contracts",
         "parser-contracts": "Parser contracts",
         "ownership-and-handoff": "Ownership and handoff",
-        "completion-milestones": "Completion milestones"
+        "completion-milestones": "Completion milestones",
+        "member-lifecycle-extension": "Member lifecycle extension",
+        "equipment-maintenance-update": "Equipment maintenance update"
       },
       "headingKeywords": {}
     },
@@ -142,6 +150,7 @@
         "sample-records-on-first-launch": "Sample records on first launch",
         "using-the-window": "Using the window",
         "command-format-and-feedback": "Command format and feedback",
+        "unsupported-addressbook-commands": "Unsupported AddressBook commands",
         "shared-field-rules": "Shared field rules",
         "availability": "Availability",
         "correcting-common-errors": "Correcting common errors",
@@ -149,11 +158,15 @@
         "add-a-member-member-add": "Add a member: member add",
         "list-members-member-list": "List members: member list",
         "view-a-member-and-their-equipment-member-view": "View a member and their equipment: member view",
+        "edit-a-member-member-edit": "Edit a member: member edit",
         "delete-a-member-member-delete": "Delete a member: member delete",
+        "restore-a-member-member-restore": "Restore a member: member restore",
         "add-equipment-equipment-add": "Add equipment: equipment add",
         "list-equipment-equipment-list": "List equipment: equipment list",
         "view-equipment-and-its-holder-equipment-view": "View equipment and its holder: equipment view",
+        "edit-equipment-equipment-edit": "Edit equipment: equipment edit",
         "delete-equipment-equipment-delete": "Delete equipment: equipment delete",
+        "restore-equipment-equipment-restore": "Restore equipment: equipment restore",
         "open-the-loans-tab-loans-list": "Open the Loans tab: loans list",
         "assign-equipment-loans-add": "Assign equipment: loans add",
         "return-equipment-loans-return": "Return equipment: loans return",
@@ -209,6 +222,13 @@
       "headingKeywords": {}
     },
     {
+      "src": "commands/equipment-maintenance.md",
+      "headings": {
+        "edit-and-restore-equipment": "Edit and restore equipment"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "commands/equipment-view.md",
       "headings": {
         "equipment-view": "Equipment view",
@@ -247,10 +267,18 @@
     {
       "src": "commands/member-delete.md",
       "headings": {
-        "delete-a-member": "Delete a member",
+        "soft-delete-a-member": "Soft-delete a member",
         "input-and-behavior": "Input and behavior",
         "command-contract": "Command contract",
         "verification": "Verification"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "commands/member-edit.md",
+      "headings": {
+        "edit-a-member": "Edit a member",
+        "integration-contract": "Integration contract"
       },
       "headingKeywords": {}
     },
@@ -262,10 +290,31 @@
       "headingKeywords": {}
     },
     {
+      "src": "commands/member-restore.md",
+      "headings": {
+        "restore-a-member": "Restore a member",
+        "model-and-persistence-contract": "Model and persistence contract",
+        "gui-and-feature-integration": "GUI and feature integration"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "commands/member-view.md",
       "headings": {
         "member-view": "Member view",
         "integration-status": "Integration status"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "commands/search-and-planning.md",
+      "headings": {
+        "search-and-inventory-planning": "Search and inventory planning",
+        "members": "Members",
+        "equipment": "Equipment",
+        "input-refresh-and-navigation": "Input, refresh and navigation",
+        "inventory-groups-and-duplicates": "Inventory groups and duplicates",
+        "integration-contract": "Integration contract"
       },
       "headingKeywords": {}
     },
@@ -310,6 +359,37 @@
         "review-status-after-merged-routing": "Review status after merged routing",
         "mvp-reconciliation": "MVP reconciliation",
         "evidence": "Evidence"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "gui/SearchPlanningLifecycle.md",
+      "headings": {
+        "search-planning-integration-with-member-lifecycle": "Search/planning integration with member lifecycle",
+        "conflict-resolution": "Conflict resolution",
+        "verification": "Verification"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "gui/SearchPlanningReview.md",
+      "headings": {
+        "search-planning-review-follow-up": "Search/planning review follow-up",
+        "preserve-queries-after-deletion": "Preserve queries after deletion",
+        "retain-integrated-edit-and-search-routing": "Retain integrated edit and search routing",
+        "verification": "Verification",
+        "git-convention-audit": "Git convention audit"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "gui/SearchPlanningVerification.md",
+      "headings": {
+        "week-10-search-and-inventory-planning-verification": "Week 10 search and inventory planning verification",
+        "implemented-behavior": "Implemented behavior",
+        "initial-feature-checks-on-windows-java-25-0-4": "Initial feature checks on Windows, Java 25.0.4",
+        "mounted-application-evidence": "Mounted application evidence",
+        "scope-and-later-shared-integration": "Scope and later shared integration"
       },
       "headingKeywords": {}
     },
