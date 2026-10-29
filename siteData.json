@@ -46,6 +46,7 @@
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
         "architecture": "Architecture",
+        "contribution-diagram-index": "Contribution diagram index",
         "ui-component": "UI component",
         "tab-completion": "Tab completion",
         "logic-component": "Logic component",
@@ -53,9 +54,13 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "directory-search-and-inventory-planning": "Directory search and inventory planning",
+        "command-navigation-to-equipment-groups": "Command navigation to equipment groups",
+        "identity-based-deletion": "Identity-based deletion",
+        "domain-mutation-transactions": "Domain mutation transactions",
         "adding-multiple-physical-equipment-units": "Adding multiple physical equipment units",
         "equipment-editing-deletion-and-restoration": "Equipment editing, deletion and restoration",
-        "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
+        "undo-redo-feature": "Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-dev-ops": "Documentation, logging, testing, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
@@ -65,13 +70,26 @@
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
+        "member-email-validation": "Member email validation",
         "launch-and-shutdown": "Launch and shutdown",
+        "single-jar-distribution": "Single-JAR distribution",
+        "unicode-command-separators": "Unicode command separators",
         "grouped-equipment-command-assistance-and-appearance": "Grouped equipment, command assistance and appearance",
+        "retained-inventory-totals-during-filtering": "Retained inventory totals during filtering",
         "tab-completion-across-current-commands": "Tab completion across current commands",
         "rejection-of-retired-commands": "Rejection of retired commands",
+        "unicode-member-names": "Unicode member names",
         "adding-a-batch-of-equipment": "Adding a batch of equipment",
         "editing-deleting-and-restoring-equipment": "Editing, deleting and restoring equipment",
-        "saving-data": "Saving data"
+        "stored-loan-date-validation": "Stored loan date validation",
+        "saving-data": "Saving data",
+        "loan-filter-visibility": "Loan filter visibility",
+        "undo-and-redo": "Undo and redo",
+        "command-only-equipment-browsing": "Command-only equipment browsing",
+        "atomic-save-access-policy": "Atomic-save access policy",
+        "command-word-aliases-and-casing": "Command-word aliases and casing",
+        "batch-loan-validation-diagnostics": "Batch loan validation diagnostics",
+        "command-based-loans-filters": "Command-based Loans filters"
       },
       "headingKeywords": {}
     },
@@ -152,23 +170,22 @@
         "laplace-user-guide": "Laplace User Guide",
         "quick-start": "Quick start",
         "completing-commands-and-fields-with-tab": "Completing commands and fields with Tab",
-        "sample-records-on-first-launch": "Sample records on first launch",
-        "using-the-window": "Using the window",
-        "appearance-mode-dark-and-mode-light": "Appearance: mode dark and mode light",
+        "register-your-first-member": "Register your first member",
         "command-format-and-feedback": "Command format and feedback",
         "unsupported-addressbook-commands": "Unsupported AddressBook commands",
-        "shared-field-rules": "Shared field rules",
         "availability": "Availability",
         "correcting-common-errors": "Correcting common errors",
         "features": "Features",
         "add-a-member-member-add": "Add a member: member add",
         "list-members-member-list": "List members: member list",
+        "search-filter-and-sort-members-member-search": "Search, filter and sort members: member search",
         "view-a-member-and-their-equipment-member-view": "View a member and their equipment: member view",
         "edit-a-member-member-edit": "Edit a member: member edit",
         "delete-a-member-member-delete": "Delete a member: member delete",
         "restore-a-member-member-restore": "Restore a member: member restore",
         "add-equipment-equipment-add": "Add equipment: equipment add",
         "list-equipment-equipment-list": "List equipment: equipment list",
+        "search-filter-and-sort-equipment-equipment-search": "Search, filter and sort equipment: equipment search",
         "view-equipment-and-its-holder-equipment-view": "View equipment and its holder: equipment view",
         "edit-equipment-equipment-edit": "Edit equipment: equipment edit",
         "delete-equipment-equipment-delete": "Delete equipment: equipment delete",
@@ -176,8 +193,32 @@
         "open-the-loans-tab-loans-list": "Open the Loans tab: loans list",
         "assign-equipment-loans-add": "Assign equipment: loans add",
         "return-equipment-loans-return": "Return equipment: loans return",
+        "undo-a-record-change-undo": "Undo a record change: undo",
+        "redo-an-undone-change-redo": "Redo an undone change: redo",
         "a-complete-issue-and-return-workflow": "A complete issue-and-return workflow",
+        "input-reference": "Input reference",
+        "shared-field-rules": "Shared field rules",
+        "advanced-input-reference": "Advanced input reference",
+        "exact-text-and-character-rules": "Exact text and character rules",
+        "advanced-tab-completion": "Advanced Tab completion",
+        "sample-records-on-first-launch": "Sample records on first launch",
+        "using-the-window": "Using the window",
+        "switch-views-and-find-records": "Switch views and find records",
+        "browse-equipment-groups-and-units": "Browse equipment groups and units",
+        "prepare-commands-from-details": "Prepare commands from details",
+        "track-loans": "Track loans",
+        "read-command-feedback": "Read command feedback",
+        "keyboard-controls-and-help": "Keyboard controls and Help",
+        "resize-panels-and-scroll": "Resize panels and scroll",
+        "reading-the-loans-view": "Reading the Loans view",
+        "appearance-mode-dark-and-mode-light": "Appearance: mode dark and mode light",
         "saving-file-access-and-recovery": "Saving, file access and recovery",
+        "locate-your-saved-data": "Locate your saved data",
+        "make-a-backup": "Make a backup",
+        "restore-a-known-good-backup": "Restore a known-good backup",
+        "move-to-another-computer": "Move to another computer",
+        "handle-a-startup-failure": "Handle a startup failure",
+        "advanced-manual-editing-and-compatibility": "Advanced: manual editing and compatibility",
         "faq": "FAQ",
         "mvp-limits": "MVP limits",
         "command-summary": "Command summary"
@@ -199,7 +240,8 @@
         "laplace-command-routing-reference": "Laplace command routing reference",
         "integration-status": "Integration status",
         "loan-rules": "Loan rules",
-        "integration-verification": "Integration verification"
+        "integration-verification": "Integration verification",
+        "undo-and-redo": "Undo and redo"
       },
       "headingKeywords": {}
     },
@@ -252,7 +294,7 @@
     {
       "src": "commands/loans-list.md",
       "headings": {
-        "open-the-loans-tab": "Open the Loans tab"
+        "open-and-filter-the-loans-tab": "Open and filter the Loans tab"
       },
       "headingKeywords": {}
     },
@@ -313,14 +355,27 @@
       "headingKeywords": {}
     },
     {
+      "src": "commands/redo.md",
+      "headings": {
+        "redo-an-undone-change": "Redo an undone change"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "commands/search-and-planning.md",
       "headings": {
         "search-and-inventory-planning": "Search and inventory planning",
         "members": "Members",
         "equipment": "Equipment",
         "input-refresh-and-navigation": "Input, refresh and navigation",
-        "inventory-groups-and-duplicates": "Inventory groups and duplicates",
-        "integration-contract": "Integration contract"
+        "inventory-groups-and-duplicates": "Inventory groups and duplicates"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "commands/undo.md",
+      "headings": {
+        "undo-a-record-change": "Undo a record change"
       },
       "headingKeywords": {}
     },
